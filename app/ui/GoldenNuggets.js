@@ -1,15 +1,18 @@
 import styles from "./goldenNuggets.module.css";
 import { goldenData as data } from "../data";
 import Image from "next/image";
+import { Fragment } from "react";
 
 function Highlight({ text }) {
   return (
     <span className={styles.text}>
       {text.split("|").map((part, index) =>
         index % 2 ? (
-          <span key={index} className={styles.highlight}>
-            {part}
-          </span>
+          <Fragment>
+            <span key={index} className={styles.highlight}>
+              {part}
+            </span>
+          </Fragment>
         ) : (
           part
         )
