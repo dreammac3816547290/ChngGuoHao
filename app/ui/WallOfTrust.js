@@ -4,7 +4,7 @@ import { WOTData as data } from "../data";
 export default function WallOfTrust() {
   return (
     <div className={styles.main}>
-      <h2>Wall Of Trust</h2>
+      <h2>{data.title}</h2>
       {data.testimonials.map((testimonial, index) => (
         <>
           {index != 0 && <hr />}

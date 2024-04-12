@@ -1,0 +1,84 @@
+.main {
+  padding: 0.8rem calc(15% - 0.3rem) 0;
+  background: #1e345d;
+  color: white;
+}
+
+.text {
+  font: 0.3rem AktivGrotesk-Thin;
+}
+
+.highlight {
+  font-family: AktivGrotesk-Italic;
+}
+
+.paragraph {
+  margin-bottom: 0.25rem;
+}
+
+.section {
+  padding: 0.4rem 0;
+}
+
+.source {
+  margin-top: 0.1rem;
+  font: 0.11rem AktivGrotesk-Italic;
+  line-height: 1.5;
+}
+
+.riskContainer {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.riskText {
+  flex: 10 1 4rem;
+}
+
+.riskImg {
+  max-width: 4rem;
+  flex: 1 0 2.8rem;
+}
+
+.interestContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.interestImg {
+  max-width: 5rem;
+  flex: 1 1 4rem;
+}
+
+.interestText {
+  flex: 10 1 4rem;
+}
+
+.healthcareContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+.healthcareImg {
+  max-width: 5rem;
+  flex: 1 1 4rem;
+}
+
+.healthcareHeader {
+  margin-top: 0.4rem;
+}
+
+.healthcareSection {
+  margin: 0.4rem 0 0.6rem;
+}
+
+.healthcareContent {
+  margin-left: -0.4rem;
+}

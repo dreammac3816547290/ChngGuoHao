@@ -4,8 +4,18 @@
 }
 
 @font-face {
+  font-family: AktivGrotesk-Thin;
+  src: url(fonts/AktivGrotesk-Thin.ttf);
+}
+
+@font-face {
   font-family: AktivGrotesk-Bold;
   src: url(fonts/AktivGroteskCorp-Bold.ttf);
+}
+
+@font-face {
+  font-family: AktivGrotesk-Italic;
+  src: url(fonts/AktivGroteskCorp-Italic.ttf);
 }
 
 @font-face {
@@ -43,9 +53,24 @@
 body {
   margin: 0;
   font: 0.2rem AktivGrotesk;
+  line-height: 1.5;
 }
 
 h2 {
   margin: 0;
   font: 0.44rem AktivGrotesk-Bold;
+}
+
+h3 {
+  margin: 0 0 0.4rem;
+  font: 0.4rem Goldplay;
+}
+
+h4 {
+  margin: 0 0 0.3rem;
+  font: 0.3rem AktivGrotesk-Bold;
+}
+
+li {
+  margin-left: -0.1rem;
 }

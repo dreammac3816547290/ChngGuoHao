@@ -5,9 +5,11 @@ import Image from "next/image";
 function Header() {
   return (
     <div className={styles.header}>
-      <img
+      <Image
         src="/profile/photo.png"
         alt="photo"
+        width={240}
+        height={320}
         style={{ marginRight: "0.3rem", width: "2.4rem", height: "3.2rem" }}
       />
       <div className={styles.nameContainer}>
