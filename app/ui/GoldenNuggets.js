@@ -8,11 +8,9 @@ function Highlight({ text }) {
     <span className={styles.text}>
       {text.split("|").map((part, index) =>
         index % 2 ? (
-          <Fragment>
-            <span key={index} className={styles.highlight}>
-              {part}
-            </span>
-          </Fragment>
+          <span key={index} className={styles.highlight}>
+            {part}
+          </span>
         ) : (
           part
         )
@@ -21,10 +19,13 @@ function Highlight({ text }) {
   );
 }
 
-function Paragraph({ texts }) {
-  return texts.map((text, index) => (
-    <div key={index} className={index != texts.length - 1 && styles.paragraph}>
-      {text}
+function Paragraph({ children }) {
+  return children.map((child, index) => (
+    <div
+      key={index}
+      className={index != children.length - 1 && styles.paragraph}
+    >
+      {child}
     </div>
   ));
 }
@@ -41,7 +42,7 @@ function Risk() {
       <h3>{data_.title}</h3>
       <div className={styles.riskContainer}>
         <div className={styles.riskText}>
-          <Paragraph texts={data_.content} />
+          <Paragraph>{data_.content}</Paragraph>
         </div>
         <div className={styles.riskImg}>
           <Image
@@ -59,11 +60,6 @@ function Risk() {
 
 function Interest() {
   const data_ = data.interest;
-  const content = [
-    data_.slogan,
-    <Highlight text={data_.quote} />,
-    data_.outcome,
-  ];
   return (
     <div className={styles.section}>
       <h3>{data_.title}</h3>
@@ -79,7 +75,11 @@ function Interest() {
           <div className={styles.source}>{data_.source}</div>
         </div>
         <div className={styles.interestText}>
-          <Paragraph texts={content} />
+          <Paragraph>
+            {data_.slogan}
+            <Highlight text={data_.quote} />
+            {data_.outcome}
+          </Paragraph>
         </div>
       </div>
     </div>
@@ -91,14 +91,16 @@ function Healthcare() {
 
   function MediSave() {
     const data__ = data_.mediSave;
-    const content = [data__.opening, data__.closing];
     return (
       <div className={styles.healthcareSection}>
         <h4>
           <li>{data__.title}</li>
         </h4>
         <div className={styles.healthcareContent}>
-          <Paragraph texts={content} />
+          <Paragraph>
+            {data__.opening}
+            {data__.closing}
+          </Paragraph>
         </div>
       </div>
     );
@@ -106,25 +108,24 @@ function Healthcare() {
 
   function MediShield() {
     const data__ = data_.mediShield;
-    const content = [
-      data__.opening,
-      <div className={styles.text}>{data__.middle.header}</div>,
-      <ul>
-        {data__.middle.content.map((text, index) => (
-          <li key={index} style={{ listStyleType: "disc" }}>
-            {<Highlight text={text} />}
-          </li>
-        ))}
-      </ul>,
-      data__.closing,
-    ];
     return (
       <div className={styles.healthcareSection}>
         <h4>
           <li>{data__.title}</li>
         </h4>
         <div className={styles.healthcareContent}>
-          <Paragraph texts={content} />
+          <Paragraph>
+            {data__.opening}
+            <div className={styles.text}>{data__.middle.header}</div>
+            <ul>
+              {data__.middle.content.map((text, index) => (
+                <li key={index} style={{ listStyleType: "disc" }}>
+                  {<Highlight text={text} />}
+                </li>
+              ))}
+            </ul>
+            {data__.closing}
+          </Paragraph>
         </div>
       </div>
     );
@@ -132,18 +133,17 @@ function Healthcare() {
 
   function CareShield() {
     const data__ = data_.careShield;
-    const content = [
-      data__.opening,
-      <Highlight text={data__.middle} />,
-      data__.closing,
-    ];
     return (
       <div className={styles.healthcareSection}>
         <h4>
           <li>{data__.title}</li>
         </h4>
         <div className={styles.healthcareContent}>
-          <Paragraph texts={content} />
+          <Paragraph>
+            {data__.opening}
+            <Highlight text={data__.middle} />
+            {data__.closing}
+          </Paragraph>
         </div>
       </div>
     );
