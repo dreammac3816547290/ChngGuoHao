@@ -71,8 +71,8 @@ function Achievements() {
     <div className={styles.achievements}>
       <div className={styles.title}>Achievements</div>
       <ul>
-        {data.achievements.map((achievement) => (
-          <li key={achievement}>{achievement}</li>
+        {data.achievements.map((achievement, index) => (
+          <li key={index}>{achievement}</li>
         ))}
       </ul>
     </div>
@@ -84,12 +84,12 @@ export default function Profile() {
     <div className={styles.main}>
       <Header />
       <div className={styles.greeting}>{data.greeting}</div>
-      {data.introduction.map((paragraph) => (
-        <p>{paragraph}</p>
+      {data.introduction.map((paragraph, index) => (
+        <p key={index}>{paragraph}</p>
       ))}
       <Goal />
-      {data.closing.map((paragraph) => (
-        <p>{paragraph}</p>
+      {data.closing.map((paragraph, index) => (
+        <p key={index}>{paragraph}</p>
       ))}
       <Button />
       <Achievements />
