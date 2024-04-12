@@ -1,7 +1,6 @@
 import styles from "./goldenNuggets.module.css";
 import { goldenData as data } from "../data";
 import Image from "next/image";
-import { Fragment } from "react";
 
 function Highlight({ text }) {
   return (
