@@ -1,0 +1,17 @@
+.main {
+  padding: 0.5rem calc(15% - 0.3rem);
+  background: #f3f3f3;
+}
+
+.name {
+  margin: 0.25rem 0 0.1rem;
+  font-family: AktivGrotesk-Bold;
+}
+
+.position {
+  font: 0.16rem AktivGrotesk-MI;
+}
+
+.content {
+  margin: 0.2rem 0 0.25rem;
+}

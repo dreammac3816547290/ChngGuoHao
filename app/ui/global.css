@@ -1,0 +1,51 @@
+@font-face {
+  font-family: AktivGrotesk;
+  src: url(fonts/AktivGroteskCorp-Regular.ttf);
+}
+
+@font-face {
+  font-family: AktivGrotesk-Bold;
+  src: url(fonts/AktivGroteskCorp-Bold.ttf);
+}
+
+@font-face {
+  font-family: AktivGrotesk-LI;
+  src: url(fonts/AktivGroteskCorp-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: AktivGrotesk-MI;
+  src: url(fonts/AktivGroteskCorp-MediumItalic.ttf);
+}
+
+@font-face {
+  font-family: AktivGrotesk-BlackI;
+  src: url(fonts/Aktiv-Grotesk-W04-Black-Italic.ttf);
+}
+
+@font-face {
+  font-family: Goldplay;
+  src: url(fonts/Goldplay-Light.ttf);
+}
+
+@media (max-width: 400px) {
+  :root {
+    font-size: 25vw; /* width * vw = 10000 */
+  }
+}
+
+@media (min-width: 400px) {
+  :root {
+    font-size: 100px;
+  }
+}
+
+body {
+  margin: 0;
+  font: 0.2rem AktivGrotesk;
+}
+
+h2 {
+  margin: 0;
+  font: 0.44rem AktivGrotesk-Bold;
+}

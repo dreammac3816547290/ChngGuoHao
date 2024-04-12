@@ -1,0 +1,84 @@
+.main {
+  padding: 0.4rem calc(15% - 0.3rem);
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.nameContainer {
+  flex: 1 0 3rem;
+}
+
+.name {
+  font: 0.3rem AktivGrotesk-Bold;
+}
+
+.position {
+  margin: 0.1rem 0 0.15rem;
+  font-family: AktivGrotesk-LI;
+}
+
+.img {
+  margin-right: 0.1rem;
+  width: 0.3rem;
+  height: 0.3rem;
+}
+
+.greeting {
+  margin: 0.4rem 0;
+  font: 0.46rem Goldplay;
+}
+
+.goal {
+  margin: 0.4rem 0;
+  font: 0.3rem AktivGrotesk-Bold;
+}
+
+.highlight {
+  font-family: AktivGrotesk-BlackI;
+}
+
+.buttonContainer {
+  margin: 0.4rem 0;
+  border: 1px solid;
+  border-radius: 0.3rem;
+  max-width: 2.2rem;
+  background: #ecf0f1;
+  overflow: hidden;
+}
+
+@media (max-width: 800px) {
+  .buttonContainer {
+    margin: 0.4rem auto;
+  }
+}
+
+.buttonContainer a {
+  text-decoration: none;
+}
+
+.button {
+  padding: 0.15rem 0;
+  font-family: AktivGrotesk-Bold;
+  color: black;
+  text-align: center;
+}
+
+.achievements {
+  border-radius: 0.2rem;
+  padding: 0.3rem 0.3rem 0.2rem;
+  background: #f3f3f3;
+}
+
+.title {
+  margin-bottom: 0.3rem;
+  font-family: AktivGrotesk-Bold;
+}
+
+.achievements li {
+  margin-top: 0.15rem;
+}
