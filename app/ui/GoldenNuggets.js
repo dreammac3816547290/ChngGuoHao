@@ -118,7 +118,7 @@ function Healthcare() {
             <div className={styles.text}>{data__.middle.header}</div>
             <ul>
               {data__.middle.content.map((text, index) => (
-                <li key={index} className={styles.liMedi}>
+                <li key={index} className={styles.liMediShield}>
                   {<Highlight text={text} />}
                 </li>
               ))}

@@ -89,7 +89,12 @@
   margin-left: -0.4rem;
 }
 
-.liMedi {
-  margin: 0.2rem 0;
+.liMediShield {
   list-style-type: disc;
+}
+
+@media (max-width: 820px) {
+  .liMediShield {
+    margin: 0.2rem 0;
+  }
 }
