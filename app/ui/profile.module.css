@@ -31,6 +31,7 @@
 .greeting {
   margin: 0.4rem 0;
   font: 0.46rem Goldplay;
+  line-height: 1.2;
 }
 
 .goal {

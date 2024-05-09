@@ -17,7 +17,7 @@
 }
 
 .section {
-  padding: 0.4rem 0;
+  padding: 0.6rem 0;
 }
 
 .source {
@@ -76,9 +76,20 @@
 }
 
 .healthcareSection {
-  margin: 0.4rem 0 0.6rem;
+  margin: 0.4rem 0 1rem;
+}
+
+@media (max-width: 600px) {
+  .healthcareSection {
+    margin-bottom: 0.6rem;
+  }
 }
 
 .healthcareContent {
   margin-left: -0.4rem;
+}
+
+.liMedi {
+  margin: 0.2rem 0;
+  list-style-type: disc;
 }

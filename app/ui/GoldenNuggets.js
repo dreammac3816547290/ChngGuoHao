@@ -118,7 +118,7 @@ function Healthcare() {
             <div className={styles.text}>{data__.middle.header}</div>
             <ul>
               {data__.middle.content.map((text, index) => (
-                <li key={index} style={{ listStyleType: "disc" }}>
+                <li key={index} className={styles.liMedi}>
                   {<Highlight text={text} />}
                 </li>
               ))}
