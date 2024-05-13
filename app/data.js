@@ -31,7 +31,7 @@ const WOTData = {
       name: "Chua Rui Fen",
       position: "Management Trainee at MSD Singapore",
       content:
-        "Your ability to explain complex financial concepts in a clear manner makes me well-informed of my financial decision. I appreciate your responsiveness, attention to details and customized financial strategies you developed for me.",
+        "Guohao's ability to explain complex financial concepts in a clear manner makes me well-informed of my financial decision. I appreciate his responsiveness, attention to details and customized financial strategies he developed for me.",
     },
     {
       name: "Leonard Leong",
